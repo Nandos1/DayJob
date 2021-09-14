@@ -1,0 +1,114 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Day Job</title>
+      <link href="resources/css/style.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+
+<!-- Header -->
+
+<script language="javascript">
+  function changeImage(images, curr, img_id) {
+
+    // Go back to the start
+    if  (images.length==curr) {
+        curr = 0;
+    }
+
+    // Actually changing the images
+    document.getElementById(img_id).src = images[curr];
+
+    // When you click again, make another change
+    document.getElementById(img_id).onclick = function () {
+        changeImage(images, curr+1, img_id)
+    }
+  }
+</script>
+
+<!-- Grid -->
+
+<div class="row">
+    <div class="column">
+        <img src="resources\images\1\1.0.gif" id="imgClickAndChange" onclick='changeImage(["resources/images/1/1.0.gif",
+        "resources/images/1/1.1.gif","resources/images/1/1.2.gif","resources/images/1/1.3.gif","resources/images/1/1.4.gif",
+        "resources/images/1/1.5.gif","resources/images/1/1.6.gif","resources/images/1/1.7.gif","resources/images/1/1.8.gif",
+        "resources/images/1/1.9.gif"], 1,
+        "imgClickAndChange")' />
+    </div>
+   <div class="column">
+        <img src="resources\images\2\2.0.gif" id="imgClickAndChange1" onclick='changeImage(["resources/images/2/2.0.gif",
+        "resources/images/2/2.1.gif","resources/images/2/2.2.gif","resources/images/2/2.3.gif", "resources/images/5/5.1.gif"], 1,
+        "imgClickAndChange1")' />
+   </div>
+   <div class="column">
+      <img src="resources\images\3.png" id="imgClickAndChange2" nclick='changeImage(["list of images"], 1,
+      "imgClickAndChange2")' />
+   </div>
+   <div class="column">
+      <img src="resources\images\4.png" id="imgClickAndChange3" nclick='changeImage(["list of images"], 1,
+      "imgClickAndChange3")' />
+   </div>
+   <div class="column">
+    <img src="resources\images\5\5.0.gif" id="imgClickAndChange4" onclick='changeImage(["resources/images/5/5.0.gif",
+    "resources/images/5/5.1.gif"], 1,
+    "imgClickAndChange4")' />
+   </div>
+   <div class="column">
+    <img src="resources\images\6\6.0.png" id="imgClickAndChange5" onclick='changeImage(["resources/images/6/6.0.png",
+    "resources/images/6/6.1.gif","resources/images/6/6.2.gif", "resources/images/6/6.3.gif"], 1,
+    "imgClickAndChange5")' />
+   </div>
+   <div class="column">
+     <img src="resources\images\7\7.0.gif" id="imgClickAndChange6" onclick='changeImage(["resources/images/7/7.0.gif",
+     "resources/images/7/7.1.gif","resources/images/7/7.2.gif",  "resources/images/7/7.3.gif", "resources/images/7/7.4.gif",
+     "resources/images/7/7.5.png", "resources/images/7/7.6.png", "resources/images/7/7.7.png", "resources/images/7/7.8.png",
+     "resources/images/7/7.9.png", "resources/images/7/7.10.png"], 1,
+     "imgClickAndChange6")' />
+   </div>
+   <div class="column">
+    <img src="resources\images\8\8.0.gif" id="imgClickAndChange7" onclick='changeImage(["resources/images/8/8.0.gif",
+    "resources/images/8/8.1.gif","resources/images/8/8.2.gif"], 1,
+    "imgClickAndChange7")' />
+   </div>
+   <div class="column">
+    <img src="resources\images\9.gif" id="imgClickAndChange8" nclick='changeImage(["list of images"], 1,
+    "imgClickAndChange8")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\10\10.0.png" id="imgClickAndChange9" onclick='changeImage(["resources/images/10/10.0.png",
+    "resources/images/10/10.1.png"], 1,
+    "imgClickAndChange9")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\11\11.0.png" id="imgClickAndChange10" onclick='changeImage(["resources/images/11/11.0.png",
+    "resources/images/11/11.1.gif","resources/images/11/11.2.gif"], 1,
+    "imgClickAndChange10")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\12.gif" id="imgClickAndChange11" nclick='changeImage(["list of images"], 1,
+    "imgClickAndChange11")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\13.gif" id="imgClickAndChange12" nclick='changeImage(["list of images"], 1,
+    "imgClickAndChange12")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\14\14.0.png" id="imgClickAndChange13" onclick='changeImage(["resources/images/14/14.0.png",
+    "resources/images/14/14.1.png","resources/images/14/14.2.png","resources/images/14/14.3.png","resources/images/14/14.4.png"], 1,
+    "imgClickAndChange13")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\15.gif" id="imgClickAndChange14" nclick='changeImage(["list of images"], 1,
+    "imgClickAndChange14")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\16.png" id="imgClickAndChange15" nclick='changeImage(["list of images"], 1,
+    "imgClickAndChange15")' />
+  </div>
+</div>
+
+  </body>
+</html>
