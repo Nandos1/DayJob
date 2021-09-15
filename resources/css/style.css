@@ -1,6 +1,26 @@
+.header {
+  display:block;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+  height: 69px;
+  width: 100%;
+  background-color: white;
+
+}
+
 h1 {
   font-family: Helvetica;
   font-size: 40px;
+  color: black;
+  background-color: white;
+  opacity: 1;
+  text-align: center;
+}
+
+p {
+  font-family: Helvetica;
+  font-size: 15px;
   color: black;
   background-color: white;
   opacity: 1;
